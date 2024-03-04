@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Bubble Sort Visualizer</title>
+    <link rel="stylesheet" type= "text/css" href="{% static 'css/hello.css'%}">
+    <script src="{% static 'js/algorithmscript.js' %}"></script>
+
+</head>
+<body>
+<section><nav>
+    <ul>
+        <div class="galley-tittle">
+        <a href="#" id="RR-link">Round Robin (RR)</a>
+        </div>
+        <div class="galley-tittle">
+        <a href="#" id="FCFs-link">First Come First Serve</a>
+        </div>
+        <div class="galley-tittle">
+        <a href="#" id="SFJ-link">SJF</a>
+        </div>
+    </ul>
+</nav></section>
+
+
+<div class="container">
+    <div class="input_container">
+        <input type="text" id="numbers-input" placeholder="Agregar números">
+        <input type="number" id="speed-input" placeholder="Velocidad">
+        <button id="run-algorithm-btn">Ejecutar algoritmo</button>
+    </div>
+    <div class="Algorithms" id="algorithm-results"></div>
+</div>
+</body>
+</html>
